@@ -1,0 +1,50 @@
+.header__container {
+    display: flex;
+    border-bottom: 2px solid var(--accent-color);
+    background: var(--background-sub-color);
+}
+.header__body{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    font-size: 1.5em;
+    align-items: center;
+    width: 100%;
+}
+.header__logo-container{
+    display: flex;
+    gap: 5px;
+}
+.header__logo-icon {
+    color: var(--accent-sub-color);
+}
+@media (max-width: 426px){
+    .header__logo-text{
+        display: none;
+    }
+    .header__action-btns__container{
+        font-size: 0.6em;
+    }
+}
+.header__action-btns__container {
+    display: flex;
+    gap: 1.5em;
+
+    .active-route {
+        color: var(--accent-sub-color) !important;
+    }
+
+    .router-btn {
+        border: 2px solid var(--background-sub-color);
+        padding: 10px;
+        border-radius: 5px;
+        color: var(--base-font-color);
+    }
+
+    .router-btn:hover {
+        border: 2px solid var(--accent-color);
+        background: var(--background-color);
+        color: var(--accent-sub-color);
+        box-shadow: inset 0px 0px 5px 0px var(--accent-color);
+    }
+}

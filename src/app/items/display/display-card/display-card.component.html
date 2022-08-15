@@ -1,0 +1,25 @@
+<div class="card__container">
+    <div class="card__header-container">{{card.eng_header}}</div>
+    <div class="card__description-container">
+        <div>
+            <div>{{card.eng_desc}}</div>
+            <div>
+                <ul>
+                    <li class="description__li" *ngFor="let li of card.ul_eng">{{li}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="description__tag">
+            <span>
+                {{card_tags}}
+            </span>
+        </div>
+    </div>
+    <div class="card__footer-container">
+        <div [class.disabled]="true">Details</div> |
+        <div><a target="_blank" [class.disabled]="card.demo_url == ''" href="{{card.demo_url}}">Demo</a></div> |
+        <div [class.disabled]="card.repo_url == ''">
+            <a target="_blank" href="{{card.repo_url}}"><i class="bi bi-github"></i> Repo</a>
+        </div>
+    </div>
+</div>

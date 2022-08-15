@@ -1,0 +1,23 @@
+<div class="card-list__container">
+    <!-- TODO: CREATE COMPONENT. Reused at 'about me' and 'contacts' -->
+    <!-- Also create ckasses for container style -->
+    <div class="card-list__header w-100" style="display:none;">
+        <div class="title w-30">Artem Aksenov</div>
+        <div class="__hr w-40"></div>
+        <div class="__input w-30">
+            <i class="input__serach-btn bi bi-search"></i>
+
+            <div class="__input-body">
+                <input placeholder="Tags, Titles, etc." class=""type="text">
+                <div class="input__suggestion" style="display:none;">
+                    aaaaaaa
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-list__body w-100">
+        <div *ngFor="let project_card of cards_list" class="card-list__element-container">
+            <app-display-card [card]="project_card"></app-display-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+<div class="user-info__container ">
+    <div class="user-info__content __content-width">
+        <div class="user-info__header __header" style="display: none;">
+            <div class="user-info__header-text">
+                Hello there!
+                <i class="user-info__header-icon bi bi-lightbulb"></i>
+
+            </div>
+            <div class="__hr w-80"></div>
+        </div>
+        <div class="user-info__body parent">
+            <div class="user-info__body_first-row">
+                <div class="div1 user-info__welcome-word __card">
+                    <div class="__card-header">About me</div>
+                    <div class="__card-content">
+                        {{welcome_word}}
+                        <div class="__card-content">
+                            As always any feedback is appreciated
+                        </div>
+                    </div>
+                </div>
+                <div class="div2 __card">
+                    <div class="__card-header">
+                        Contacts
+                    </div>
+                    <div class="__card-content">
+                        <div>
+                            artem.aks@estad.ru
+                        </div>
+
+                        <div>
+                            TG @RA1OL33
+                        </div>
+                    </div>
+                    <div class="__card-header">
+                        Repos
+                    </div>
+                    <div class="__card-content">
+                        <div>
+                            Git
+                        </div>
+
+                        <div>
+                            CodePen
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-info__body_first-row w-100">
+                
+                <div class="div2 __card">
+                    <div class="__card-header">
+                        Soft skills
+                    </div>
+                    <div class="__card-content">
+                        Project Management, Teamwork, Excellent communication skills
+                    </div>
+                </div>
+                <div class="div3 __card w-100">
+                    <div class="__card-header">
+                        Hard skills
+                    </div>
+                    <div class="__card-content">
+                        <ul>
+                            <li class="description__li" *ngFor="let skill of hard_skills">{{skill}}</li>
+                        </ul>
+                    </div>                    
+                </div>
+            </div>            
+        </div>
+    </div>
+
+</div>
