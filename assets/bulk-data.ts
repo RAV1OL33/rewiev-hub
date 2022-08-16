@@ -35,7 +35,7 @@ const BulkData: ICard[] = [
         ru_header: '',
         eng_header: 'Search Assistant',
         ru_desc: '',
-        eng_desc: 'Simple helper app, used to brush up on Angular skills/ LAter proven useful for stock trading optimization',
+        eng_desc: 'Simple helper app, used to brush up on Angular skills. Later proven useful for stock trading optimization',
         ul_eng: [],
         tags: ['Angular', 'Bootstrap'],
         repo_url: 'https://github.com/RAV1OL33/Search-Try-prod',
